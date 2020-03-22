@@ -1,6 +1,6 @@
-﻿# [Connecting NodeJs & PostgreSQL](https://github.com/dannibla/nodejs-postgresql)
+﻿# Sending email by connecting NodeJs & PostgreSQL
 
-Learn how to connect PostgreSQL with NodeJs, While you are using PostgreSQL as database and NodeJs as backend, you need PostgreSQL database packages to connect with nodejs. There are various packages available but most popular and well documented is node-postgres [pg](https://node-postgres.com/). Let’s start.
+This project helps you to write backend using ExpressJs,NodeJs and PostgresSQL.It also makes use of express-validator to validate the emailId.It enables you to easily send emails to the required email by customising your own content for you email.
 
 ## What's needed
 
@@ -54,13 +54,3 @@ INSERT INTO Employee values(1,'John',1001);
 - Type `node app.js` in terminal/console in the source folder where `app.js` is located
 - server started on port 4000. (http://localhost:4000/) in default browser
 
-## Brief Documented
-
-Documented on [medium](https://link.medium.com/Itzt6BDbAV)
-
-## Help on Executing Queries
-
-Documented is available node-postgres(Doc) [pg](https://node-postgres.com/features/queries)
-
-## Copyright and License
-Copyright 2019 Connecting NodeJs & PostgreSQL, released under the MIT License.
