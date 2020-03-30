@@ -29,19 +29,19 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'mcqueen',
-    password: 'shivani123',
+    password: 'password',
     port: 5432,
   })
 
   mailer.extend(app, {
-    from: 'shivaniravi97@gmail.com',
+    from: 'something@gmail.com',
     host: 'smtp.gmail.com', // hostname
     secureConnection: true, // use SSL
     port: 465, // port for secure SMTP
     transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts
     auth: {
-      user: 'shivaniravi97@gmail.com',
-      pass: 'shraavani97'
+      user: 'something@gmail.com',
+      pass: 'password'
     }
   });
   
@@ -51,26 +51,6 @@ const pool = new Pool({
   app.get('/sendmail', (request, response) => { 
     response.status(200).send("Received");
   });
-
-//   app.get('/sendmail', function (req, res, next) {
-//     app.mailer.send('email', {
-//       to: 'shivani.pr@surya-soft.com', // REQUIRED. This can be a comma delimited string just like a normal email to field. 
-//       subject: 'Test Email', // REQUIRED.
-//       otherProperty: 'Other Property' // All additional properties are also passed to the template as local variables.
-//     }, function (err) {
-//       if (err) {
-//         // handle error
-//         console.log(err);
-//         res.send('There was an error sending the email');
-//         return;
-//       }
-//       res.status(200).send('Email Sent');
-//     });
-//   });
-
-
-
-
 
   app.post('/sendmail', 
   [
